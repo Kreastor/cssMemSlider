@@ -1,3 +1,3 @@
 # cssMemSlider
 
-## https://kreastor.github.io/cssMemSlider/index.html
+## https://kreastor.github.io/cssMemSlider/cssMemSlider/index.html
