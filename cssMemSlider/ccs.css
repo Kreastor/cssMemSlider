@@ -272,28 +272,28 @@ h2 {
 
 	.wrapper label:after {
 		left: 59px;
-		top: -148px;
+		top: -160px;
 		padding: 25px 14px;
 	}
 
     #slide1 {
         right: 230px;
-        bottom: -118px;
+		bottom: -105px;
     }
     
     #slide2 {
         right: 190px;
-        bottom: -118px;
+		bottom: -105px;
     }
     
     #slide3 {
         right: 150px;
-        bottom: -118px;
+        bottom: -105px;
     }
     
     #slide4 {
         right: 110px;
-        bottom: -118px;
+        bottom: -105px;
     }    
 }
 
