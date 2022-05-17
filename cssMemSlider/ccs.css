@@ -25,10 +25,10 @@ h1 {
 	background-color: rgb(157, 151, 151);
 }
 .wrapper {
-	height: 460px;
+	width: 43.75rem;
+	height: 28.75rem;
 	margin: 20px auto 0;
-	position: relative;
-	width: 700px;
+	position: relative;	
 } 
 
 .slider {
@@ -154,6 +154,13 @@ h1 {
 #slide4:checked ~ .underslider-content .controls .label4 .point {
 	background: transparent;
 	border: 0.2rem solid rgb(39, 39, 39, 0.5);
+}
+
+.label1:active, 
+.label2:active,
+.label3:active, 
+.label4:active {
+	background-color: wheat;
 }
 
 input {
