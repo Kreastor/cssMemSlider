@@ -74,47 +74,46 @@ h1 {
 }
 
 .wrapper .controls {
+	display: flex;
 	left: 97%;
-	margin-left: -98px;
+	margin-left: -170px;
 	position: absolute;
 }
 
 .wrapper label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.2rem;
+	height: 3.2rem;
 	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 0px 8px 0 10px;
-	position: relative;
-	width: 8px;
+	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
-	border-radius: 50%;
 	-webkit-transition: background ease-in-out .5s;
 	-moz-transition: background ease-in-out .5s;
 	-o-transition: background ease-in-out .5s;
 	transition: background ease-in-out .5s;
 }
 
-.wrapper label:after {
-	content: " ";
-	border: 2px solid transparent;
-	display: block;
-	height: 15px;
-	left: -19px;
-	position: absolute;
-	top: -14px;
-	width: 15px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
+.point {
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	cursor: pointer;
+	background: rgba(39, 39, 39, 0.5);
 	border-radius: 50%;
-	background-color: transparent;
-	padding: 22px 15px;
+	transition: all ease-in-out .6s;
 }
 
-.wrapper label:hover:after {
-	cursor: pointer;
+.controls label:hover .point{
+	transition: all ease-in-out 500ms;
+	background: rgb(2, 2, 7);
+}
+
+.controls {
+	display: none;
 }
 
 .wrapper label:hover, 
@@ -149,50 +148,20 @@ h1 {
 	z-index: 1;
 }
 
+#slide1:checked ~ .underslider-content .controls .label1 .point, 
+#slide2:checked ~ .underslider-content .controls .label2 .point,
+#slide3:checked ~ .underslider-content .controls .label3 .point,
+#slide4:checked ~ .underslider-content .controls .label4 .point {
+	background: transparent;
+	border: 0.2rem solid rgb(39, 39, 39, 0.5);
+}
+
 input {
 	z-index: 0;
-	display: block;
+	display: none;
 	width: 16px;
 	height: 16px;
 	margin: 0 5px;
-}
-
-input:hover {
-	cursor: pointer;
-	background-color: #70707e
-}
-
-input[type=radio]:checked .underslider-content .underslider-text > label:after {
-	background-color: #70707e;
-	cursor: pointer;
-}
-
-#slide1 {
-	position: absolute;
-	z-index: 30;
-	right: 98px;
-	bottom: -40px;
-}
-
-#slide2 {
-	position: absolute;
-	z-index: 30;
-	right: 67px;
-	bottom: -40px;
-}
-
-#slide3 {
-	position: absolute;
-	z-index: 30;
-	right: 38px;
-	bottom: -40px;
-}
-
-#slide4 {
-	position: absolute;
-	z-index: 30;
-	right: 8px;
-	bottom: -40px;
 }
 
 .wrapper .underslider-text {
@@ -258,16 +227,12 @@ h2 {
 
     .wrapper .controls {
         position: absolute;
-        left: 140px;
-        top: 80px;
+		left: 250px;
+		top: -55px;
     }
 
 	input {
 		margin: 0 5px 65px;
-	}
-
-	.wrapper label {
-		margin: 0px 18px 0 10px
 	}
 
 	.wrapper label:after {
