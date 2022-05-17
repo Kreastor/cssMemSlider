@@ -262,3 +262,26 @@ h2 {
     }    
 }
 
+@media (min-width: 320px) and ( max-width:379px) {
+
+	.wrapper {
+		width: 320px !important;
+		height: 200px !important;
+    } 
+
+	.underslider-content {
+		flex-direction: column;
+		margin-top: 75px !important;
+	}
+
+	.underslider-text {
+		width: 19rem !important;
+		height: 10rem !important;
+	}
+
+    .wrapper .controls {
+		left: 71%;
+		top: -55px;
+    }
+
+}
